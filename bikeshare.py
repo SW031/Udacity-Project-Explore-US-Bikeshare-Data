@@ -259,6 +259,7 @@ def raw_data(df):
         rawdata = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
         if rawdata.lower() == 'yes':
             # print current 5 lines
+            print('Current 5 lines:"
             print(df[i:i+5])
             
             # increase index i by 5 to print next 5 lines in new execution
