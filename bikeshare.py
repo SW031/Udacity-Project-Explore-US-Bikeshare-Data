@@ -202,6 +202,8 @@ def user_stats(df, city):
 
     # TO DO: Display counts of user types
     usertypes = df['User Type'].values
+    
+    # count different types of users
     ct_subscriber  = (usertypes == 'Subscriber').sum()
     ct_customer = (usertypes == 'Customer').sum()
     print('The number of subscribers in', city.title(), 'is:',ct_subscriber,'\n')
